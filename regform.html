@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms Review</title>
+    <style>
+        body {
+            background-color: #8beaf0;
+            text-align: center;
+        }
+        h1, label {
+            font-family: Arial;
+        }
+        input {
+            margin: 4px;
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+      <embed src="https://acegif.com/wp-content/gifs/spaghetti-73.gif" width="200" height="200" alt="Spaghetti" id="logo" />
+      <hr>
+      <form action="./regform.html" method="POST" id="regform">
+        <h1>Order your food NOW!</h1>
+        <hr>
+        <section class="personal-details">
+          <label for="username">Username:</label>
+                <input type="text" name="username" id="username" pattern="[A-Za-z0-9\.]+">
+          <br>
+          <label for="email">Email:</label>
+                <input type="text" name="email" id="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+          <br>
+          <label for="mobile">Mobile:</label>
+                <input type="text" name="mobile" id="mobile" pattern="[0-9]+">
+          <br>
+          <label for="pass" aria-placeholder="More than 8 characters">Password:</label>
+                <input type="password" name="pass" id="pass" minlength="8">
+          <br>
+          <label for="address">Address:</label>
+    			<input type="text" name="address" id="address">
+        </section>
+        <hr>
+
+        <section class="submission">
+          <input type="submit" value="Submit">
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

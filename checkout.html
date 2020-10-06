@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms Review</title>
+    <link rel="stylesheet" href="styling.css">
+    <script src="checkout.js"></script>
+  </head>
+  <body onload="docParserOnLoad()">
+    <main>
+      <embed src="https://acegif.com/wp-content/gifs/spaghetti-73.gif" width="200" height="200" alt="Spaghetti" id="logo" />
+      <hr>
+        <h1 id="greeting"></h1>
+        <hr>
+        <section class="food">
+          <button type="button" id="pizza" onclick="foodClickHandler('pizza')"></button>
+          <button type="button" id="bechamel" onclick="foodClickHandler('bechamel')"></button>
+          <button type="button" id="kofta" onclick="foodClickHandler('kofta')"></button>
+        </section>
+        <section class="checkout">
+          <button type="button" id="checkout" onclick="checkoutHandler()"> Checkout ! </button>
+        </section>
+    </main>
+  </body>
+</html>

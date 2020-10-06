@@ -1,0 +1,15 @@
+body {
+    background-color: #8beaf0;
+    text-align: center;
+}
+h1, label, button {
+    font-family: Arial;
+}
+input, button {
+    margin: 4px;
+    display: inline-block;
+}
+label {
+    display: inline-block;
+    width: 120px;
+}

@@ -2,38 +2,59 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Forms Review</title>
-    <link rel="stylesheet" href="styling.css">
+    <meta name="viewport" content="width=device-width">
+    <title>Food Ordering</title>
+    <script src="checkout.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="bg.css">
+
   </head>
   <body>
     <main>
-      <embed src="https://acegif.com/wp-content/gifs/spaghetti-73.gif" width="200" height="200" alt="Spaghetti" id="logo" />
+      <div class="jumbotron">
+        <div class="container-fluid text-center">
+          <h1 class="display-4">Order your food NOW!</h1>
+          <p class="lead">You can now order the most healthy and delicious food you desire .. </p>
+        </div>
+      </div>
       <hr>
-      <form action="./checkout.html" method="GET" id="regform">
-        <h1>Order your food NOW!</h1>
-        <hr>
-        <section class="personal-details">
-          <label for="username">Username:</label>
-                <input type="text" name="username" id="username" pattern="[A-Za-z0-9\.]+">
-          <br>
-          <label for="email">Email:</label>
-                <input type="text" name="email" id="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-          <br>
-          <label for="mobile">Mobile:</label>
-                <input type="text" name="mobile" id="mobile" pattern="[0-9]+">
-          <br>
-          <label for="pass" aria-placeholder="More than 8 characters">Password:</label>
-                <input type="password" name="pass" id="pass" minlength="8">
-          <br>
-          <label for="address">Address:</label>
-    			<input type="text" name="address" id="address">
-        </section>
-        <hr>
+      <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-4">
+          <img class="img-responsive" height="250" width="250" src="https://i.giphy.com/media/ZdepVTYArff7NirCK9/giphy.webp">
+        </div>
 
-        <section class="submission">
-          <input type="submit" value="Submit">
-        </section>
-      </form>
+        <div class="col-xl-4 bg-light rounded">
+          <h4>Please fill in your data:</h4>
+          <form action="./checkout.html" method="GET" id="regform" class="">
+            <section class="personal-details">
+              <input type="text" class="form-control" name="username" id="username" placeholder="Username" pattern="[A-Za-z0-9\.]+">
+              <input type="text" class="form-control"  name="email" id="email" placeholder="Email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+              <input type="text" class="form-control"  name="mobile" id="mobile" placeholder="Mobile number" pattern="[0-9]+">
+              <input type="password" class="form-control"  name="pass" id="pass" placeholder="Password" minlength="8">
+              <input type="text" class="form-control"  name="address" placeholder="Address" id="address">
+            </section>
+            <hr>
+    
+            <section class="submission text-center">
+              <input type="submit" class="btn btn-primary" value="Submit">
+            </section>
+          </form>
+        </div>
+
+        <div class="col-xl-4">
+          <img class="img-responsive" height="250" width="250" src="https://i.giphy.com/media/ZdepVTYArff7NirCK9/giphy.webp">
+        </div>
+      </div>
+      </div>
+
+      
     </main>
   </body>
 </html>

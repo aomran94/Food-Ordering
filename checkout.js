@@ -27,6 +27,8 @@ function docParserOnLoad(){
 function foodClickHandler(foodID){
     foodMap.get(foodID).count++;
     document.getElementById(foodID).innerText = foodMap.get(foodID).cost + "LE " + foodMap.get(foodID).name + " (" + foodMap.get(foodID).count + ")";
+    document.getElementById('notifications').innerHTML += '<div class="row justify-content-center"><div class="alert alert-success"><strong>' + foodMap.get(foodID).name + '</strong> ordered successfully !.</div></div>';
+    document.getElementById('notifications').innerHTML += '<br>';
 };
 
 function checkoutHandler(){

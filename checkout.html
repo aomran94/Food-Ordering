@@ -2,24 +2,48 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Forms Review</title>
-    <link rel="stylesheet" href="styling.css">
+    <meta name="viewport" content="width=device-width">
+    <title>Checkout</title>
     <script src="checkout.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="bg.css">
+    
   </head>
   <body onload="docParserOnLoad()">
     <main>
-      <embed src="https://acegif.com/wp-content/gifs/spaghetti-73.gif" width="200" height="200" alt="Spaghetti" id="logo" />
+      <div class="jumbotron">
+        <div class="container-fluid text-center">
+          <h1 class="display-4" id="greeting">Order your food NOW!</h1>
+        </div>
+      </div>
       <hr>
-        <h1 id="greeting"></h1>
-        <hr>
-        <section class="food">
-          <button type="button" id="pizza" onclick="foodClickHandler('pizza')"></button>
-          <button type="button" id="bechamel" onclick="foodClickHandler('bechamel')"></button>
-          <button type="button" id="kofta" onclick="foodClickHandler('kofta')"></button>
-        </section>
-        <section class="checkout">
-          <button type="button" id="checkout" onclick="checkoutHandler()"> Checkout ! </button>
-        </section>
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 justify-content-center"><button class="btn btn-success" type="button" id="pizza" onclick="foodClickHandler('pizza')"></button></div>
+            <div class="col-lg-3 justify-content-center"><button class="btn btn-success" type="button" id="bechamel" onclick="foodClickHandler('bechamel')"></button></div>
+            <div class="col-lg-3 justify-content-center"><button class="btn btn-success" type="button" id="kofta" onclick="foodClickHandler('kofta')"></button></div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+          <div class="col-lg-2 justify-content-center">
+            <button type="button" id="checkout" class="btn btn-primary" onclick="checkoutHandler()"> Checkout ! </button>
+          </div>
+        </div>
+        <br>
+        <div class="container justify-content-center" id="notifications">
+
+        </div>
+
+      </div>
+
+
+        
     </main>
   </body>
 </html>
